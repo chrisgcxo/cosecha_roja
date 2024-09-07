@@ -1,0 +1,1561 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* Fuentes (copiar y pegar)
+Para cuerpos: font-family: 'Libre Franklin', sans-serif;
+Para títulos: font-family: 'PT Sans', sans-serif;
+/*
+
+/*home perfiles periodistas*/
+
+/*titulo home periodistas*/
+ a{
+ text-decoration: none;
+ color: black;
+ }
+.tperio{
+    margin-top: 60px;
+    margin-bottom: 80px;
+    padding: 10px 20px 10px 20px;
+    display: flex;
+    flex-direction: row;
+    background-color: #BF2230;
+}
+
+.tperio h1 {
+font-family: 'PT Sans', bold;
+font-size: 64px;
+color: white;
+margin-right:20px;
+}
+
+.tperio h5{
+margin-bottom: 9px;
+font-size: 24px;
+display:flex;
+align-items: flex-end;
+font-family: 'PT Sans', bold;
+}
+
+/*contenedor filtro y perfiles periodistas*/
+.cperfiles{
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: row;
+    background-color: #F7F7F7;
+}
+
+/*filtro*/
+.filtro{
+  width: 15%;
+  margin-left: 20px;
+  flex-direction:column;
+}
+
+.filtro ul{
+    border-right: solid 1px #DADADA;
+}
+
+.filtro li{
+    margin: 0px 0px 30px 0px;
+   list-style: none;
+
+}
+
+ #dhumanos{
+    margin: 0px;
+}
+
+.filtro button{
+    font-family: 'Fjalla One', sans-serif;
+    outline: none;
+    padding: 5px 10px 5px 10px;
+    font-size: 15px;
+    background-color: transparent;
+    text-align: start;
+    border: none;
+    width: 100%;
+    transition: ease all .5s;
+    -webkit-transition: ease all .5s;
+    -moz-transition: ease all .5s;
+    -ms-transition: ease all .5s;
+    -o-transition: ease all .5s;
+}
+
+.tab button.active {
+    transition: ease all 1s;
+    background-color: #BF2230;
+    color: white;
+    -webkit-transition: ease all 1s;
+    -moz-transition: ease all 1s;
+    -ms-transition: ease all 1s;
+    -o-transition: ease all 1s;
+  }
+
+
+
+.filtro button:hover{
+    cursor: pointer;
+    background-color: #BF2230;
+    color: white;
+    transition: ease all 1s;
+    -webkit-transition: ease all 1s;
+    -moz-transition: ease all 1s;
+    -ms-transition: ease all 1s;
+    -o-transition: ease all 1s;
+}
+
+
+
+  .filtro button:focus{
+      transition: ease all 1s;
+      background-color: #BF2230;
+      color: white;
+      -webkit-transition: ease all 1s;
+      -moz-transition: ease all 1s;
+      -ms-transition: ease all 1s;
+      -o-transition: ease all 1s;
+}
+
+/*grid perfiles periodistas*/
+.gridperio{
+   margin: 0px 0px 0px 80px;
+    display: flex;
+}
+/*modulo perfil periodista*/
+.gridperio td{
+  padding: 0px 25px 40px 0px
+}
+
+/*estivo div que aparece en hover*/
+.fperfil figure{
+    overflow: hidden;
+    position: relative;
+}
+
+.fperfil figure .capa{
+    transition: ease all 1s;
+    padding:15px;
+    font-family: 'Libre Franklin';
+    font-size:14px;
+    top:299px;
+    position: absolute;
+    background-color: #df82893f;
+color: white;
+width: 89%;
+height:32%;
+opacity: 0%;
+visibility:hidden;
+text-align: left;
+}
+.fperfil  img {
+   width: 285px;
+   height:305px;
+}
+
+/*mostrar div resumen bio*/
+#a:hover ~ #b {
+    cursor: pointer;
+    opacity: 100%;
+    visibility: visible;
+    transition:  ease all 1s;
+    transform:translate(0px, -125px);
+    -webkit-transition:  ease all 1s;
+    -moz-transition:  ease all 1s;
+    -ms-transition:  ease all 1s;
+    -o-transition:  ease all 1s;
+    -webkit-transform:translate(0px, -125px);
+    -moz-transform:translate(0px, -125px);
+    -ms-transform:translate(0px, -125px);
+    -o-transform:translate(0px, -125px);
+}
+.fperfil img:hover {
+    cursor: pointer;
+    transition: ease all 1s;
+    -webkit-transition: ease all 1s;
+    -moz-transition: ease all 1s;
+    -ms-transition: ease all 1s;
+    -o-transition: ease all 1s;
+    filter:brightness(50%) ;
+    -webkit-filter:brightness(50%) ;
+}
+
+
+
+.cartynom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px gray;
+    padding:20px 0px 20px 0px;
+}
+
+
+.nom h3:hover{
+    transition: ease all 1s;
+    cursor: pointer;
+color:#BF2230;
+}
+
+table h3{
+    font-weight: 200;
+  font-family: 'Fjalla One';
+    color: #848484;
+    font-size: 15px;
+}
+table #nom{
+    font-weight: 100;
+    font-family: 'Libre Franklin';
+    font-size: 18px;
+}
+
+/*perfil natalia arenas*/
+
+/*resetear margin y padding body*/
+*{
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    background-color:#f8f8f8;
+}
+
+/* barra de navegación*/
+
+nav{
+    font-family: 'Fjalla One', sans-serif;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border:1px solid #8A8A8A;
+    position: fixed;
+    top: 0;
+    z-index:4;
+}
+
+
+
+nav ul{
+    display: flex;
+}
+
+#busqueda{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#busqueda:hover{
+    cursor: pointer;
+}
+
+ #buscar{
+     width: 10%;
+    display: flex;
+}
+
+nav li{
+    display:flex;
+    flex-direction: row;
+    margin:5px 20px 5px 20px;
+    align-items: center;
+
+}
+
+nav li a{
+    text-align: center;
+    font-size: 15px;
+    padding: 10px 5px 10px 5px;
+    text-decoration: none;
+    color: black;
+}
+
+nav li a:hover{
+    cursor: pointer;
+    transition: ease all 1s;
+    background-color: #BF2230;
+    color:white;
+    -webkit-transition: ease all 1s;
+    -moz-transition: ease all 1s;
+    -ms-transition: ease all 1s;
+    -o-transition: ease all 1s;
+}
+
+nav li a:focus{
+    transition: ease all 1s;
+    background-color: #BF2230;
+    color:white;
+    -webkit-transition: ease all 1s;
+    -moz-transition: ease all 1s;
+    -ms-transition: ease all 1s;
+    -o-transition: ease all 1s;
+}
+
+#botonnavperio{
+    transition: ease all 1s;
+    background-color: #BF2230;
+    color:white;
+    -webkit-transition: ease all 1s;
+    -moz-transition: ease all 1s;
+    -ms-transition: ease all 1s;
+    -o-transition: ease all 1s;
+}
+
+
+.logo{
+    padding: 10px 15px 10px 15px;
+}
+
+/*nav categorias*/
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    color: white;
+    display: none;
+    opacity:0%;
+    position: absolute;
+    top:30px;
+    min-width: 260px;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    text-align: left;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #97141f;}
+  
+  .dropdown:hover .dropdown-content {
+    background-color: #BF2230;
+    box-shadow: 1px 12px 16px 5px #00000082;
+      display: block;
+      opacity: 100%;
+     
+}
+  .dropdown:hover .dropbtn {
+   transition:ease all 1s;
+   background-color: #BF2230;
+   color:white;
+   -webkit-transition:ease all 1s;
+   -moz-transition:ease all 1s;
+   -ms-transition:ease all 1s;
+   -o-transition:ease all 1s;
+}
+
+
+
+/*bio periodista*/
+.contenedor{
+    font-family: 'Libre Franklin', sans-serif;
+    padding-top:20px;
+    padding-bottom: 20px;
+    margin:50px 0px 50px 0px;
+    width: 100%;
+    background-color: #393939;
+}
+.bioperio{
+    padding-top: 10px;
+    padding-bottom: 40px;
+    display:flex;
+    flex-direction: row;
+    width: 70%;
+    margin: auto;
+}
+.fyt{
+    padding:0px 50px 0px 50px;
+    width: 20%;
+    display:flex;
+    flex-direction: column;
+}
+
+.tw h3{
+    font-weight: 600;
+    font-family: 'Libre Franklin';
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 18px;
+    color:#D84451;
+}
+
+.tw h3:hover{
+    transition: ease all 1s;
+    -webkit-transition: ease all 1s;
+    -moz-transition: ease all 1s;
+    -ms-transition: ease all 1s;
+    -o-transition: ease all 1s;
+    color:#BF2230;
+}
+
+.tw{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.tbio{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.tbio h1{
+    font-family: 'PT Sans', bold;
+    color: white;
+    font-size: 60px;
+}
+
+.escdesde{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   align-items: center;
+}
+
+.escdesde h5{
+color: #939393;
+font-size: 18px;
+font-family: 'Libre Franklin';
+}
+
+/*tags bio periodista*/
+.tagsescd span{
+    transition: ease all 1s;
+    color:white;
+    background-color:#BF2230;
+    padding:8px;
+    margin-right: 10px;
+    -webkit-transition: ease all 1s;
+    -moz-transition: ease all 1s;
+    -ms-transition: ease all 1s;
+    -o-transition: ease all 1s;
+    font-size: 14px;
+    font-family: 'Libre Franklin';
+}
+
+.tagsescd span:hover{
+    transition: all 1s;
+    cursor: pointer;
+    color: black;
+}
+
+/*tags bio*/
+.tagsescd{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.tbio p{
+    line-height: 150%;
+    font-family: 'Libre Franklin';
+    color: #939393;
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+/*sus notas*/
+.susnotas{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: auto;
+}
+
+.susnotas h1{
+    font-family: 'PT Sans';
+    font-size: 48px;
+}
+
+/*botones filtro*/
+.botonesfiltro{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 90px;
+}
+
+
+.botonesfiltro button{
+    font-family: 'Libre Franklin';
+    background-color: transparent;
+    font-size: 15px;
+    color:#696969;
+    border:1px solid #696969;
+    box-shadow: none;
+    background-color: none;
+    margin:5px;
+    padding: 8px;
+    border-radius:20px;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    -ms-border-radius:20px;
+    -o-border-radius:20px;
+}
+
+.botonesfiltro button:hover{
+    transition: ease all 1s;
+    cursor: pointer;
+    color: #BF2230;
+    border:1px solid #BF2230;
+    -webkit-transition: ease all 1s;
+    -moz-transition: ease all 1s;
+    -ms-transition: ease all 1s;
+    -o-transition: ease all 1s;
+}
+.botonesfiltro button:focus{
+    outline: none;
+    transition: ease all 1s;
+    border-color: #BF2230;
+    background-color: #BF2230;
+    color: white;
+    -webkit-transition: ease all 1s;
+    -moz-transition: ease all 1s;
+    -ms-transition: ease all 1s;
+    -o-transition: ease all 1s;
+}
+
+/*modulos notas*/
+.nota{
+    transition: ease all 1s;
+    background-color: white;
+    display: flex;
+    flex-direction:row;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 70px;
+    box-shadow: 5px 5px 5px 0px #a7a7a759, 5px 5px 50px 3px rgba(0,0,0,0);
+    -webkit-transition: ease all 1s;
+    -moz-transition: ease all 1s;
+    -ms-transition: ease all 1s;
+    -o-transition: ease all 1s;
+}
+
+/*hover imagen nota*/
+.imagennota{
+    background-size: cover;
+    background-blend-mode: multiply;
+    background: rgb(219,62,76);
+    background: linear-gradient(190deg, rgba(219,62,76,1) 0%, rgba(249,176,182,1) 62%, rgb(255, 255, 255) 100%);
+}
+
+.imagennota img{
+    transition:ease all 1s;
+    -webkit-transition:ease all 1s;
+    -moz-transition:ease all 1s;
+    -ms-transition:ease all 1s;
+    -o-transition:ease all 1s;
+}
+
+
+#parent:hover .imgh {
+    transition:ease all 1s;
+    filter:opacity(53%);
+    -webkit-transition:ease all 1s;
+    -moz-transition:ease all 1s;
+    -ms-transition:ease all 1s;
+    -o-transition:ease all 1s;
+    -webkit-filter:opacity(53%);
+}
+
+.nota:hover{
+    background-color: #f4f4f4;
+    transition: ease all .5s;
+    cursor: pointer;
+    box-shadow: 8px 8px 5px 0px #a7a7a759, 5px 5px 100px 3px rgba(0,0,0,0);
+    -webkit-transition: ease all .5s;
+    -moz-transition: ease all .5s;
+    -ms-transition: ease all .5s;
+    -o-transition: ease all .5s;
+}
+
+.textonota{
+    margin: 15px 30px 15px 30px;
+    display: flex;
+    flex-direction: column;
+
+}
+.textonota h4{
+    font-weight: 1000;
+    font-family: 'Libre Franklin';
+    font-size: 14px;
+    color: white;
+}
+
+.textonota h4 span:hover{
+    transition:ease all 1s;
+    color: black;
+    -webkit-transition:ease all 1s;
+    -moz-transition:ease all 1s;
+    -ms-transition:ease all 1s;
+    -o-transition:ease all 1s;
+}
+
+.textonota h1{
+    word-spacing:10px;
+    font-weight: 1000;
+    font-size: 22px;
+    font-family: 'Libre Franklin';
+    margin-top: 20px;
+    margin-bottom:30px;
+}
+
+
+.textonota h1:hover{
+    transition: ease all 1s;
+    cursor: pointer;
+    color:#BF2230;
+}
+
+.textonota p{
+    line-height: 140%;
+    color: #747474;
+    font-family: 'Libre Franklin';
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.textonota h5{
+ font-weight: 500;
+    font-family: 'Libre Franklin';
+    font-size: 14px;
+}
+
+
+/*botones siguiente página*/
+.botsig{
+    margin: auto;
+    width: 70%;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    padding-bottom:50px ;
+    border-bottom: 1px solid #EDEDED;
+    margin-bottom: 50px;
+}
+
+.botsig button{
+    font-family: 'Libre Franklin';
+    background-color: transparent;
+    margin:10px;
+    font-size: 20px;
+    border-style: none;
+    color: black;
+    padding: 5px 10px 5px 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+body > div.botsig > button.dot.active{
+    transition: ease all 1s;
+    margin:10px;
+    font-size: 20px;
+    border-style: none;
+    background-color: #BF2230;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transition: ease all 1s;
+    -moz-transition: ease all 1s;
+    -ms-transition: ease all 1s;
+    -o-transition: ease all 1s;
+
+}
+
+
+.botsig button:hover{
+    cursor: pointer;
+    color:#BF2230 ;
+
+}
+
+
+
+#botuno{
+    margin:10px;
+    font-size: 20px;
+    border-style: none;
+    background-color: #BF2230;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+
+
+.botsig h3{
+    font-size:20px;
+    font-weight:300;
+    font-family: 'Libre Franklin';
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+.flechasig{
+  height: 46px;
+  width: auto;
+}
+/*footer*/
+footer{
+    font-family: 'Libre Franklin';
+    display: flex;
+    padding: 50px 20px 30px 20px;
+    background-color: black;
+    flex-direction: column;
+}
+
+footer .grupohor{
+    display: flex;
+    flex-direction: row;
+}
+
+footer .bloque1foot{
+    width: 20%;
+display: flex;
+flex-direction: row;
+}
+
+footer .about{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+footer .about h3{
+    font-weight: 200;
+font-size: 16px;
+color: white;
+}
+
+footer .about h3:hover{
+    transition: ease all 1s;
+    cursor: pointer;
+    -webkit-transition: ease all 1s;
+    -moz-transition: ease all 1s;
+    -ms-transition: ease all 1s;
+    -o-transition: ease all 1s;
+    color: red;
+}
+
+
+
+footer .redes{
+    display: flex;
+    flex-direction: column;
+    margin-left:80px;
+}
+
+footer .redes h2{
+font-weight: 100;
+font-size: 18px;
+color:white;
+}
+
+footer .nredes{
+margin-top: 20px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+    align-items: center;
+}
+
+
+footer .nredes img:hover{
+cursor: pointer;
+}
+
+footer .organizaciones{
+    margin-left: 100px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+footer .organizaciones img:hover{
+    cursor: pointer;
+}
+
+
+footer .opsoc{
+    margin:10px;
+}
+
+footer .cronos{
+    margin:10px;
+}
+
+footer .dem{
+    margin:10px;
+}
+
+footer .cr h5{
+    font-weight: 100;
+    font-size:12px;
+    color: white;
+}
+#raya{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.cr{
+    margin-top: 80px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .typ{
+margin-top: 5px;
+display: flex;
+flex-direction: row;
+}
+
+footer .typ h5:hover{
+    transition: ease all 1s;
+    cursor:pointer;
+    color: red;
+    -webkit-transition: ease all 1s;
+    -moz-transition: ease all 1s;
+    -ms-transition: ease all 1s;
+    -o-transition: ease all 1s;
+}
+
+
+  /*tab content */
+
+    .tabcontent {
+        display: none;
+        animation: fadeEffect 1s;
+      }
+      .tabcontent2 {
+        display: none;
+        animation: fadeEffect2 1s;
+        -webkit-animation: fadeEffect2 1s;
+}
+
+      /*transicion entre tabs*/
+      @keyframes fadeEffect {
+        from {opacity: 0.5;}
+        to {opacity: 1;}
+      }
+
+      @keyframes fadeEffect2 {
+        from {opacity: 0.5;}
+        to {opacity: 1;}
+      }
+
+  /*navegacion por paginas*/
+ /* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  /* nota*/
+
+  /*contenedor fecha y tag*/
+  .contfyt{
+      width: 80%;
+      margin:auto;
+      margin-top:100px;
+      margin-bottom: 15px;
+      display:flex;
+      flex-direction:row;
+      align-items: center;
+    justify-content: flex-end;
+  }
+
+.contfyt h4{
+font-family: 'Libre Franklin';
+font-size: 15px;
+font-weight:bold;    
+color:#848484;
+font-size:15px;
+}
+  /*contenedor imagen articulo*/
+  .contimgarticulo{
+      display:flex;
+      width:80%;
+      margin:auto;
+  }
+  .contimgarticulo img{
+      width:100%;
+  }
+
+  .contfyt span{
+    font-family: 'Libre Franklin';
+    font-weight: bold;
+    transition:ease all 1s;
+    margin-left:10px;
+    background-color: #BF2230;
+    padding: 5px 10px 5px 10px;
+    color: white;
+    font-size: 14px;
+    -webkit-transition:ease all 1s;
+    -moz-transition:ease all 1s;
+    -ms-transition:ease all 1s;
+    -o-transition:ease all 1s;
+}
+
+  .contfyt span:hover{
+      color:black;
+      cursor: pointer;
+  }
+
+  /* autor y botones compartir*/
+.autyrs{
+    margin-top: 20px;
+    margin-bottom:40px;
+    display:flex;
+    width:80%;
+    margin-left:auto;
+    margin-right: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.autyrs h4{
+    font-size:22px;
+    font-family: 'Libre Franklin';
+    font-weight: bold;
+}
+.autyrs h4 a {
+    transition: ease all 0.5s;
+    color:#BF2230;
+    -webkit-transition: ease all ;
+    -moz-transition: ease all ;
+    -ms-transition: ease all ;
+    -o-transition: ease all ;
+}
+
+.autyrs h4 a:hover{
+    transition: ease all 0.5s;
+    color:#e91426;
+    -webkit-transition: ease all 0.5s;
+    -moz-transition: ease all 0.5s;
+    -ms-transition: ease all 0.5s;
+    -o-transition: ease all 0.5s;
+}
+/*iconos compartir*/
+
+.icon-social{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+.icon-social img{
+    box-shadow: 5px 3px 12px 0px #00000008;
+    border-radius: 10px;
+    background-color:white;
+    padding:10px;
+    width:10%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.icon-social img:hover{
+   transition: ease all 1s;
+   cursor: pointer;
+   -webkit-transition: ease all 1s;
+   -moz-transition: ease all 1s;
+   -ms-transition: ease all 1s;
+   -o-transition: ease all 1s;
+   background-color:rgb(241, 238, 238);
+}
+
+/*titulo articulo y cuerpo textp*/
+.contarticulo{
+    display:flex;
+    width:80%;
+    margin:auto;
+    flex-direction: column;
+    text-align: center;
+    align-items:center;
+}
+
+.contarticulo h1{
+   width:90%;
+   font-size: 58px;
+   margin-bottom: 40px;
+   font-family: 'PT Sans', sans-serif;
+   font-weight: 900;
+   }
+
+.contarticulo h3{
+    color:#767676;
+    width:85%;
+    font-size:30px;
+    margin-bottom: 40px;
+    font-family:'Libre Franklin';
+    font-weight:500;
+}
+
+/*contenedor parrafo articulo*/
+.contpart{
+    margin:auto;
+    width:90%;
+}
+
+.contpart p{
+    text-align: left;
+    font-size:24px;
+    line-height: 32px;   /* within paragraph */
+    margin-bottom: 30px; /* between paragraphs */
+}
+
+/* miniatura periodista articulo*/
+.miniaturaperio{
+    transition:ease all 1s;
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:0px;
+    padding-right: 40px;
+    width:500px;
+    height:142px;
+    display: flex;
+    flex-direction:row;
+    background-color:#BF2230;
+    align-items:center;
+    justify-content:space-around;
+    box-shadow: 0 6px 4px -2px gray;
+    margin-bottom: 50px;
+    margin-top: 40px;
+    -webkit-transition:ease all 1s;
+    -moz-transition:ease all 1s;
+    -ms-transition:ease all 1s;
+    -o-transition:ease all 1s;
+}
+
+.miniaturaperio:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    background-color:#c72432;
+    transition: ease all 1s;
+    -webkit-transition: ease all 1s;
+    -moz-transition: ease all 1s;
+    -ms-transition: ease all 1s;
+    -o-transition: ease all 1s;
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    box-shadow: 0 6px 12px 2px #808080a6;
+}
+
+.miniaturaperio h4{
+    color: white;
+    font-size:32px;
+    margin-bottom:15px;
+    font-family:'PT Sans', sans-serif;
+    font-weight:900;
+}
+
+.nombreytwart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.twart{
+display: flex;
+flex-direction:row;
+align-items: center;
+justify-content:space-between;
+}
+
+
+
+.miniaturaperio h5{
+    color: white;
+    font-size: 16px;
+    font-family: 'Libre Franklin';
+    font-weight:normal;
+}
+
+/*noticias relacionadas*/
+.noticiasrel{
+    margin:auto;
+    width:90%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+.noticiasrel h1{
+text-align: left;
+font-size: 32px;
+border-bottom: 2px solid #BCBCBC;
+margin-bottom: 40px;
+font-family: 'PT Sans', sans-serif;
+font-weight: 900;
+}
+
+/*miniaturas noticias relacionadas*/
+.minnotasrel{
+display:flex;
+flex-direction:row;
+justify-content: space-between;
+}
+.minnotasrel img{
+    width:100%;
+    transition: ease all 1s;
+    -webkit-transition: ease all 1s;
+    -moz-transition: ease all 1s;
+    -ms-transition: ease all 1s;
+    -o-transition: ease all 1s;
+}
+
+.mnotarel{
+    width:32%;
+    overflow: hidden;
+    background-color: black;
+    -webkit-box-shadow: 8px 6px 9px -2px rgba(0,0,0,0.59); 
+    box-shadow: 5px 4px 9px -2px rgb(0 0 0 / 59%);
+}
+
+
+/*hover miniatura noticias relacionadas*/
+
+.mnotarel img:hover{
+    cursor: pointer;
+    opacity: 40%;
+}
+
+.mnotareltext{
+    display: flex;
+    flex-direction: column;
+    padding:15px;
+}
+.mnotarel h4{
+    color: white;
+    font-size: 15px;
+    font-family: 'Libre Franklin';
+    font-weight: 600;
+    margin-bottom:40px;
+}
+
+.mnotarel h5{
+    color: white;
+    font-size: 13px;
+    font-family: 'Libre Franklin';
+    font-weight: 100;
+}
+
+/*contenedor noticias relacionadas 1 y 2*/
+.dcontnrel{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    justify-content: space-between;
+}
+
+/*noticias relacionadas divisor der*/
+.divis3{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+background-color: black;
+padding:20px 10px;
+justify-content: space-between;
+box-shadow: rgb(0 0 0 / 59%) 8px 6px 9px -3px;
+}
+.divis3 img:hover{
+    filter:brightness(60%);
+    -webkit-filter:brightness(60%);
+    cursor: pointer;
+}
+
+.divis3 h2{
+    font-size:14px;
+    font-weight: bold;
+}
+.divis3 h4{
+    font-size:17px;
+    font-weight: bold;
+}
+.divis3 h5{
+    font-size:15px;
+    font-weight: 400;
+}
+
+.divis3art1{
+    display: flex;
+    flex-direction:row;
+}
+
+.divis3artext{
+    padding-top:10px;
+    display: flex;
+    flex-direction: column;
+    color:white;
+    justify-content: space-between;
+    margin-left:15px;
+}
+
+.divis3art1 img{
+    width: 227px;
+    height:150px;
+}
+
+
+.conttextrel{
+    background-color:black;
+    position:relative;
+    top:265px;
+    color: white;
+    padding:15px;
+    width: 55%;
+}
+.conttextrel h4{
+    margin-bottom:20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.conttextrel h5{
+    font-weight: 400;
+    font-size:13px;
+}
+
+/*div noticias relacionadas derecha*/
+.divis2{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+}
+/*noticia relacionada 2 y 3*/
+.notarel2{
+    display: flex;
+    flex-direction: row;
+    box-shadow: rgb(0 0 0 / 59%) 8px 6px 9px -3px;
+}
+.notarel2 img {
+    transition: ease all 1s;
+    width:283px;
+    height:180px;
+    -webkit-transition: ease all 1s;
+    -moz-transition: ease all 1s;
+    -ms-transition: ease all 1s;
+    -o-transition: ease all 1s;
+}
+
+.notarel2 img:hover {
+     cursor: pointer;
+     filter:brightness(60%);
+     -webkit-filter:brightness(60%);
+}
+.notareltext2{
+    text-align:left;
+    color: white;
+    background-color: black;
+    padding:15px 10px 15px 10px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    justify-content:space-between;
+}
+.notareltext2 h5{
+    font-size:15px;
+    font-family: 'libre franklin';
+}
+
+.notareltext2 h6{
+    font-size:13px;
+}
+
+
+/* tags articulo*/
+
+  /*variables etiquetas*/
+
+  /*generos*/
+  .figure.tag {
+    position: relative;
+    font-size: 14px;
+    font-family:'Libre Franklin';
+  }
+
+  .figure.tag::before {
+    position: absolute;
+    top: 85%;
+    left:77%;
+    display: block;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+  }
+.figure.tag-generos::before {
+    content: "Géneros";
+    background:#BF2230;
+  }
+   
+
+
+
+  /*violencia institucional*/
+  .figure2.tag2{
+    position: relative;
+    left:3px;
+}
+
+
+
+  .figure2.tag2::before {
+      width:40%;
+    position: absolute;
+    top: 84%;
+    left:51%;
+    display: block;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+  }
+
+.figure2.tag2-vioins::before {
+    content: "Violencia institucional";
+    background:#BF2230;
+  }
+
+ 
+
+
+  /*Periodistas*/
+
+  .figure3.tag3{
+    position: relative;
+}
+
+  .figure3.tag3::before {
+    position: absolute;
+    top: 85%;
+    left:73%;
+    display: block;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+  }
+
+  .figure3.tag3-periodistas:before{
+    content: "Periodistas";
+    background:#BF2230; 
+  }
+
+
+
+  
+  /*contenedor miniatura periodistas articulo*/
+  .contminperio{
+    width:32%;
+}
+.contminperio img{
+    width:398px;
+    height:453px;
+}
+
+.contminperio figure{
+   overflow: hidden;
+   position: relative;
+}
+
+.contminperio img:hover{
+   transition: ease all 1s;
+   cursor: pointer;
+   filter:brightness(50%);
+   -webkit-filter:brightness(50%);
+}
+
+
+
+.fperfil img:hover {
+    cursor: pointer;
+    transition: ease all 1s;
+    -webkit-transition: ease all 1s;
+    -moz-transition: ease all 1s;
+    -ms-transition: ease all 1s;
+    -o-transition: ease all 1s;
+    filter:brightness(50%) ;
+    -webkit-filter:brightness(50%) ;
+}
+
+
+.divElement{
+    transition: ease all 1s;
+    padding:15px;
+    font-family: 'Libre Franklin';
+    font-size:14px;
+    top:400px;
+    position: absolute;
+    background-color: #d6404dab;
+color: white;
+width: 92.5%;
+height:5%;
+text-align: left;
+overflow:hidden;
+}
+.divElement h1{
+    font-size: 18px;
+    border: none;
+    text-align: left;
+    margin-bottom: 15px;
+    font-weight: 900;
+    color: white;
+}
+
+.divElement h1 span{
+    transition: ease all 1s;
+}
+
+.divElement h1 span:hover{
+    color: black;
+}
+
+.divElement h4{
+    margin-bottom: 25px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*botones div periodistas*/
+.botonescapa2{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width:85%;
+    margin: auto;
+ }
+
+.divElement .botonescapa2 button {
+    transition: ease all 1s; 
+    background-color:transparent;
+    border:1px solid white;
+    border-radius:8px;
+    color:white;
+    padding:3px;
+}
+
+.divElement .botonescapa2 button:hover { 
+    cursor: pointer;
+    border:1px solid black;
+    color:black;
+}
+
+/*hover div nombre periodistas*/
+.divElement:hover{
+cursor: pointer;
+}
+
+/*estado hover*/
+.divElement.inhover {
+    transition:  ease all 1s;
+    transform:translate(0px, -125px);
+    -webkit-transition:  ease all 1s;
+    -moz-transition:  ease all 1s;
+    -ms-transition:  ease all 1s;
+    -o-transition:  ease all 1s;
+    -webkit-transform:translate(0px, -125px);
+    -moz-transform:translate(0px, -125px);
+    -ms-transform:translate(0px, -125px);
+    -o-transform:translate(0px, -125px);
+    height:32.5%;
+}
+
+/*estado clickeado*/
+.selected{
+    background-color: #bf222fd3;
+    transition:  ease all 1s;
+    transform:translate(0px, -125px);
+    -webkit-transition:  ease all 1s;
+    -moz-transition:  ease all 1s;
+    -ms-transition:  ease all 1s;
+    -o-transition:  ease all 1s;
+    -webkit-transform:translate(0px, -125px);
+    -moz-transform:translate(0px, -125px);
+    -ms-transform:translate(0px, -125px);
+    -o-transform:translate(0px, -125px);
+    height:32.5%;
+ }
+
+/*owl carrousel*/
+.wrapper{
+    margin:auto;
+    width: 100%; 
+  }
+  .carousel{
+    max-width: 1250px;
+    margin: auto;
+  }
+  .carousel .card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+}
+ 
+ 
+ 
+  
+  
+  .owl-carousel .owl-nav button.owl-prev {
+      display: none;
+  }
+
+  .owl-carousel .owl-nav button.owl-next{
+    transition: ease all 1s;
+    position: absolute;
+    top:95px;
+    width:70px;
+    left:1170px;
+    background-color:#d4303e;
+    border-style: none;
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 30%;
+    color: white;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    font-size: 70px;
+  }
+
+  .owl-carousel .owl-nav button.owl-next:hover{
+    background-color:#a8202b;
+    cursor: pointer;
+  }

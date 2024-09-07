@@ -1,0 +1,657 @@
+
+<!--TO DO LIST-->
+
+
+<!--home periodistas-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--jquerry-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type = "text/javascript" src = "script.js"></script>
+     <!--owl carousel-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <!--css-->
+    <link rel="stylesheet" href="css/micss.css">
+    <title>Periodistas</title>
+</head>
+<body>
+        <!--barra navegación-->
+
+        <nav>
+            <!--bloque uno-->
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li>
+                    <div  class="dropdown">
+                        <a class="dropbtn">SECCIONES</a>
+                        <div id ="dpcont" class="dropdown-content">
+                          <a href="#">Narcotráfico</a>
+                          <a href="#">Seguridad urbana</a>
+                          <a href="#">Género</a>
+                          <a href="#">Violencia institucional</a>
+                          <a href="#">Jóvenes y violencia</a>
+                          <a href="#">Politicas de drogas</a>
+                          <a href="#">Medio ambiente</a>
+                          <a href="#">Lesa humanidad</a>
+                          <a href="#">Periodismo Rojo</a>
+                        </div>
+                      </div>
+                </li>
+                
+                <li><a href="#">PERIODISTAS</a></li>
+                   </ul>
+
+                   <!--logo-->
+                   <div class="logo">
+                    <img src="images/logonav1.PNG" alt="">
+                   </div>
+
+                   <!--bloque 2-->
+                   <ul id="busqueda">
+                    <li><a href="#">SOBRE LA RED</a></li>
+                    <li id="buscar"><img width="60%" src="images/lupa.png" alt=""></li>
+                   </ul>
+        </nav>
+
+<!--titulo periodistas-->
+<div class="tperio">
+    <h1>Periodistas</h1>
+    <h5>de Cosecha Roja</h5>
+</div>
+
+<!--contenedor filtro y perfiles periodistas-->
+<div class="cperfiles">
+
+    <!--filtro-->
+    <div class="filtro">
+        <!--categorias filtros-->
+        <div class="tab">
+            <ul>
+                <li><button class="tablinks2"  onclick="CambiarCategoria2(event, 'Todos')" id="defaultOpen2">Todos</button></li>
+                <li><button >Narcotráfico</button></li>
+                <li><button>Seguridad urbana</button></li>
+                <li><button class="tablinks2"  onclick="CambiarCategoria2(event, 'Gen2')">Género</button></li>
+                <li><button class="tablinks2"  onclick="CambiarCategoria2(event, 'VionInsti2')">Violencia-institucional</button></li>
+                <li><button>Jóvenes y violencia</button></li>
+                <li><button>Póliticas de drogas</button></li>
+                <li><button>Medio ambiente</button></li>
+                <li><button>Lesa humanidad</button></li>
+                <li id="dhumanos"><button>Derechos humanos</button></li>
+            </ul>
+        </div>
+
+    </div>
+
+<!--grid perfiles periodistas-->
+<!--grid todos-->
+<div class="tabcontent2" id="Todos" style="display: block;">
+    <table class="gridperio">
+        <!--#row 1-->
+        <tr>
+            <!--perfil 1-->
+            <td>
+        <!--foto perfil-->
+        <div  class="fperfil" >
+            <figure>
+                <a href="narenas.html" id="a" ><img src="images/fperfil1.PNG" width=100% alt=""></a>
+                <div class="capa" id="b">
+                    <h4>Licenciada en Periodismo de la Universidad Nacional de Lomas de Zamora. Diplomada de la Universidad<br>
+                         de Buenos Aires en Géneros...</h4>
+                </div>
+            </figure>
+        </div>
+        <!--cantidad de articulos y nombre-->
+        <div class="cartynom">
+             <!--cantidad de articulos-->
+            <div class="cart">
+                <h3>26 artículos</h3>
+        </div>
+        <!--nombre-->
+        <div class="nom">
+            <a href="narenas.html"><h3 id="nom">Natalia Arenas</h3></a>
+        </div>
+        </div>
+            </td>
+
+            <!--perfil 2-->
+               <td>
+                <!--foto perfil-->
+
+                <div class="fperfil">
+                    <img src="images/fperfil2.PNG" alt="Ileana Arduino" id="a">
+                </div>
+                <!--cantidad de articulos y nombre-->
+                <div class="cartynom">
+                     <!--cantidad de articulos-->
+                    <div class="cart">
+                     <h3>17 artículos</h3>
+                </div>
+                <!--nombre-->
+                <div class="nom">
+                    <h3 id="nom">Ileana Arduino</h3>
+                </div>
+                </div>
+                    </td>
+
+                       <!--perfil 3-->
+            <td>
+                <!--foto perfil-->
+                <div class="fperfil">
+                <img src="images/fperfil3.PNG" alt="">
+                </div>
+                <!--cantidad de articulos y nombre-->
+                <div class="cartynom">
+                     <!--cantidad de articulos-->
+                    <div class="cart">
+                        <h3>14 artículos</h3>
+                </div>
+                <!--nombre-->
+                <div class="nom">
+                    <h3 id="nom">Matias Máximo</h3>
+                </div>
+                </div>
+                    </td>
+        </tr>
+
+        <!--#row 2-->
+        <tr>
+            <!--perfil 1-->
+            <td>
+        <!--foto perfil-->
+        <div class="fperfil">
+        <img src="images/fperfil4.PNG" alt="">
+        </div>
+        <!--cantidad de articulos y nombre-->
+        <div class="cartynom">
+             <!--cantidad de articulos-->
+            <div class="cart">
+                <h3>22 artículos</h3>
+        </div>
+        <!--nombre-->
+        <div class="nom">
+            <h3 id="nom">Sol Dinerstein</h3>
+        </div>
+        </div>
+            </td>
+
+            <!--perfil 2-->
+            <td>
+                <!--foto perfil-->
+                <div class="fperfil">
+                <img src="images/fperfil5.PNG" alt="">
+                </div>
+                <!--cantidad de articulos y nombre-->
+                <div class="cartynom">
+                     <!--cantidad de articulos-->
+                    <div class="cart">
+                     <h3>28 artículos</h3>
+                </div>
+                <!--nombre-->
+                <div class="nom">
+                    <h3 id="nom">Ana Laura Fortuzzi</h3>
+                </div>
+                </div>
+                    </td>
+
+                       <!--perfil 3-->
+            <td>
+                <!--foto perfil-->
+                <div class="fperfil">
+                <img src="images/fperfil6.PNG" alt="">
+                </div>
+                <!--cantidad de articulos y nombre-->
+                <div class="cartynom">
+                     <!--cantidad de articulos-->
+                    <div class="cart">
+                        <h3>19 artículos</h3>
+                </div>
+                <!--nombre-->
+                <div class="nom">
+                    <h3 id="nom">Sebastián Hacher</h3>
+                </div>
+                </div>
+                    </td>
+        </tr>
+
+        <!--#row 3-->
+            <!--perfil 1-->
+            <td>
+                <!--foto perfil-->
+                <div class="fperfil">
+                <img src="images/fperfil7.PNG" alt="">
+                </div>
+                <!--cantidad de articulos y nombre-->
+                <div class="cartynom">
+                     <!--cantidad de articulos-->
+                    <div class="cart">
+                        <h3>9 artículos</h3>
+                </div>
+                <!--nombre-->
+                <div class="nom">
+                    <h3 id="nom">Nicol León Arge</h3>
+                </div>
+                </div>
+                    </td>
+
+                    <!--perfil 2-->
+                       <td>
+                        <!--foto perfil-->
+                        <div class="fperfil">
+                        <img src="images/fperfil8.PNG" alt="">
+                        </div>
+                        <!--cantidad de articulos y nombre-->
+                        <div class="cartynom">
+                             <!--cantidad de articulos-->
+                            <div class="cart">
+                                <h3>16 artículos</h3>
+                        </div>
+                        <!--nombre-->
+                        <div class="nom">
+                         <h3 id="nom">Carlos Flores Valeriano</h3>
+                        </div>
+                        </div>
+                            </td>
+
+
+
+                    <!--perfil 3-->
+                       <td>
+                        <!--foto perfil-->
+                        <div class="fperfil">
+                        <img src="images/fperfil9.PNG" alt="">
+                        </div>
+                        <!--cantidad de articulos y nombre-->
+                        <div class="cartynom">
+                             <!--cantidad de articulos-->
+                            <div class="cart">
+                                <h3>2 artículos</h3>
+                        </div>
+                        <!--nombre-->
+                        <div class="nom">
+                         <h3 id="nom">Beatriz Santos Da Cruz</h3>
+                        </div>
+                        </div>
+                            </td>
+
+
+                </tr>
+
+                <!--row 4-->
+                <tr>
+                      <!--perfil 1-->
+                      <td>
+                        <!--foto perfil-->
+                        <div class="fperfil">
+                        <img src="images/fperfil10.PNG" alt="">
+                        </div>
+                        <!--cantidad de articulos y nombre-->
+                        <div class="cartynom">
+                             <!--cantidad de articulos-->
+                            <div class="cart">
+                                <h3>2 artículos</h3>
+                        </div>
+                        <!--nombre-->
+                        <div class="nom">
+                         <h3 id="nom">Carla Gago</h3>
+                        </div>
+                        </div>
+                            </td>
+                </tr>
+
+        </table>
+</div>
+
+<!--grid genero-->
+
+<div class="tabcontent2" id="Gen2">
+    <table class="gridperio">
+        <!--#row 1-->
+        <tr>
+            <!--perfil 1-->
+            <td>
+        <!--foto perfil-->
+        <div  class="fperfil" >
+            <figure>
+                <a href="narenas.html" id="a" ><img src="images/fperfil1.PNG" alt=""></a>
+                <div class="capa" id="b">
+                    <h4>Licenciada en Periodismo de la Universidad Nacional de Lomas de Zamora. Diplomada de la Universidad<br>
+                         de Buenos Aires en Géneros...</h4>
+                </div>
+            </figure>
+        </div>
+        <!--cantidad de articulos y nombre-->
+        <div class="cartynom">
+             <!--cantidad de articulos-->
+            <div class="cart">
+                <h3>26 artículos</h3>
+        </div>
+        <!--nombre-->
+        <div class="nom">
+            <a href="narenas.html"><h3 id="nom">Natalia Arenas</h3></a>
+        </div>
+        </div>
+            </td>
+
+            <!--perfil 2-->
+               <td>
+                <!--foto perfil-->
+                <div class="fperfil">
+                <img src="images/fperfil2.PNG" alt="Ileana Arduino">
+                </div>
+                <!--cantidad de articulos y nombre-->
+                <div class="cartynom">
+                     <!--cantidad de articulos-->
+                    <div class="cart">
+                     <h3>17 artículos</h3>
+                </div>
+                <!--nombre-->
+                <div class="nom">
+                    <h3 id="nom">Ileana Arduino</h3>
+                </div>
+                </div>
+                    </td>
+
+                       <!--perfil 3-->
+            <td>
+                <!--foto perfil-->
+                <div class="fperfil">
+                <img src="images/fperfil3.PNG" alt="">
+                </div>
+                <!--cantidad de articulos y nombre-->
+                <div class="cartynom">
+                     <!--cantidad de articulos-->
+                    <div class="cart">
+                        <h3>14 artículos</h3>
+                </div>
+                <!--nombre-->
+                <div class="nom">
+                    <h3 id="nom">Matias Máximo</h3>
+                </div>
+                </div>
+                    </td>
+        </tr>
+
+        <!--#row 2-->
+        <tr>
+            <!--perfil 1-->
+            <td>
+        <!--foto perfil-->
+        <div class="fperfil">
+        <img src="images/fperfil4.PNG" alt="">
+        </div>
+        <!--cantidad de articulos y nombre-->
+        <div class="cartynom">
+             <!--cantidad de articulos-->
+            <div class="cart">
+                <h3>22 artículos</h3>
+        </div>
+        <!--nombre-->
+        <div class="nom">
+            <h3 id="nom">Sol Dinerstein</h3>
+        </div>
+        </div>
+            </td>
+
+            <!--perfil 2-->
+               <td>
+                <!--foto perfil-->
+                <div class="fperfil">
+                <img src="images/fperfil5.PNG" alt="">
+                </div>
+                <!--cantidad de articulos y nombre-->
+                <div class="cartynom">
+                     <!--cantidad de articulos-->
+                    <div class="cart">
+                     <h3>28 artículos</h3>
+                </div>
+                <!--nombre-->
+                <div class="nom">
+                    <h3 id="nom">Ana Laura Fortuzzi</h3>
+                </div>
+                </div>
+                    </td>
+
+                       <!--perfil 3-->
+            <td>
+                <!--foto perfil-->
+                <div class="fperfil">
+                <img src="images/fperfil6.PNG" alt="">
+                </div>
+                <!--cantidad de articulos y nombre-->
+                <div class="cartynom">
+                     <!--cantidad de articulos-->
+                    <div class="cart">
+                        <h3>19 artículos</h3>
+                </div>
+                <!--nombre-->
+                <div class="nom">
+                    <h3 id="nom">Sebastián Hacher</h3>
+                </div>
+                </div>
+                    </td>
+        </tr>
+
+        <!--#row 3-->
+            <!--perfil 1-->
+            <td>
+                <!--foto perfil-->
+                <div class="fperfil">
+                <img src="images/fperfil7.PNG" alt="">
+                </div>
+                <!--cantidad de articulos y nombre-->
+                <div class="cartynom">
+                     <!--cantidad de articulos-->
+                    <div class="cart">
+                        <h3>9 artículos</h3>
+                </div>
+                <!--nombre-->
+                <div class="nom">
+                    <h3 id="nom">Nicol León Arge</h3>
+                </div>
+                </div>
+                    </td>
+
+                    <!--perfil 2-->
+                       <td>
+                        <!--foto perfil-->
+                        <div class="fperfil">
+                        <img src="images/fperfil8.PNG" alt="">
+                        </div>
+                        <!--cantidad de articulos y nombre-->
+                        <div class="cartynom">
+                             <!--cantidad de articulos-->
+                            <div class="cart">
+                                <h3>16 artículos</h3>
+                        </div>
+                        <!--nombre-->
+                        <div class="nom">
+                         <h3 id="nom">Carlos Flores Valeriano</h3>
+                        </div>
+                        </div>
+                            </td>
+
+
+                </tr>
+
+                <!--row 4-->
+                <tr>
+
+                </tr>
+
+        </table>
+    </div>
+
+    <!--grid violencia institucional-->
+    <div class="tabcontent2" id="VionInsti2">
+        <table class="gridperio">
+            <!--#row 1-->
+            <tr>
+                <!--perfil 1-->
+                <td>
+            <!--foto perfil-->
+            <div  class="fperfil" >
+                <figure>
+                    <a href="narenas.html" id="a" ><img src="images/fperfil1.PNG" alt=""></a>
+                    <div class="capa" id="b">
+                        <h4>Licenciada en Periodismo de la Universidad Nacional de Lomas de Zamora. Diplomada de la Universidad<br>
+                             de Buenos Aires en Géneros...</h4>
+                    </div>
+                </figure>
+            </div>
+            <!--cantidad de articulos y nombre-->
+            <div class="cartynom">
+                 <!--cantidad de articulos-->
+                <div class="cart">
+                    <h3>26 artículos</h3>
+            </div>
+            <!--nombre-->
+            <div class="nom">
+                <a href="narenas.html"><h3 id="nom">Natalia Arenas</h3></a>
+            </div>
+            </div>
+                </td>
+
+                <!--perfil 2-->
+                <td>
+                    <!--foto perfil-->
+                    <div class="fperfil">
+                    <img src="images/fperfil6.PNG" alt="">
+                    </div>
+                    <!--cantidad de articulos y nombre-->
+                    <div class="cartynom">
+                         <!--cantidad de articulos-->
+                        <div class="cart">
+                            <h3>19 artículos</h3>
+                    </div>
+                    <!--nombre-->
+                    <div class="nom">
+                        <h3 id="nom">Sebastián Hacher</h3>
+                    </div>
+                    </div>
+                        </td>
+
+                           <!--perfil 3-->
+                           <td>
+                            <!--foto perfil-->
+                            <div class="fperfil">
+                            <img src="images/fperfil9.PNG" alt="">
+                            </div>
+                            <!--cantidad de articulos y nombre-->
+                            <div class="cartynom">
+                                 <!--cantidad de articulos-->
+                                <div class="cart">
+                                    <h3>2 artículos</h3>
+                            </div>
+                            <!--nombre-->
+                            <div class="nom">
+                             <h3 id="nom">Beatriz Santos Da Cruz</h3>
+                            </div>
+                            </div>
+                                </td>
+            </tr>
+
+            <!--#row 2-->
+            <tr>
+                <!--perfil 1-->
+                <td>
+                    <!--foto perfil-->
+                    <div class="fperfil">
+                    <img src="images/fperfil10.PNG" alt="">
+                    </div>
+                    <!--cantidad de articulos y nombre-->
+                    <div class="cartynom">
+                         <!--cantidad de articulos-->
+                        <div class="cart">
+                            <h3>2 artículos</h3>
+                    </div>
+                    <!--nombre-->
+                    <div class="nom">
+                     <h3 id="nom">Carla Gago</h3>
+                    </div>
+                    </div>
+                        </td>
+
+
+            </tr>
+
+
+
+
+            </table>
+        </div>
+
+
+</div>
+
+
+        <!--footer-->
+<footer>
+
+    <div class="grupohor">
+
+    <!--logo, sobre la red etc-->
+    <div class="bloque1foot">
+        <img src="images/logofooter.PNG" alt="">
+        <div class="about">
+            <h3>Sobre la red</h3>
+            <h3>Becas</h3>
+            <h3>Asociate</h3>
+            <h3>Contacto</h3>
+        </div>
+    </div>
+
+    <!--nuestras redes sociales-->
+    <div class="redes">
+        <h2>Nuestras redes sociales</h2>
+        <div class="nredes">
+            <div class="twf"><img src="images/twitterfooter.PNG" alt=""></div>
+            <div class="ig"><img src="images/instagramfooter.PNG" alt=""></div>
+            <div class="fb"><img src="images/fbfooter1.PNG" alt=""></div>
+        </div>
+
+    </div>
+    <!--contenedor opensociety, cronos y donde está miguel...-->
+<div class="organizaciones">
+    <div class="opsoc"><img src="images/opensociety.PNG" alt=""></div>
+    <div class="cronos"><img src="images/Cronos.PNG" alt=""></div>
+    <div class="dem"><img src="images/dem.PNG" alt=""></div>
+</div>
+  </div>
+
+
+<!--copyright-->
+<div class="cr">
+    <h5>Républica Argentina, Todos los derechos reservados</h5>
+<div class="typ">
+        <h5><u>Politica de privacidad</u></h5>
+        <h5 id="raya">|</h5>
+        <h5><u>Términos y condiciones</u></h5>
+</div>
+</div>
+
+</footer>
+<script>
+         /*cambiar contenido filtros*/
+         function CambiarCategoria2(evt,CambiarCategoria2) {
+            var i, tabcontent2, tablinks2;
+            tabcontent2 = document.getElementsByClassName("tabcontent2");
+            for (i = 0; i < tabcontent2.length; i++) {
+              tabcontent2[i].style.display = "none";
+            }
+            tablinks2 = document.getElementsByClassName("tablinks2");
+            for (i = 0; i < tablinks2.length; i++) {
+              tablinks2[i].className = tablinks2[i].className.replace(" active", "");
+            }
+            document.getElementById(CambiarCategoria2).style.display = "block";
+            evt.currentTarget.className += " active";
+          }
+          document.getElementById('defaultOpen2').click();
+</script>
+</body>
+</html>

@@ -1,0 +1,514 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--jquerry-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type = "text/javascript" src = "script.js"></script>
+     <!--owl carousel-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <!--css-->
+    <link rel="stylesheet" href="css/micss.css">
+    <title>Natalia Arenas</title>
+</head>
+<body>
+    <!--barra navegación-->
+
+    <nav>
+        <!--bloque uno-->
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li>
+                <div  class="dropdown">
+                    <a class="dropbtn">SECCIONES</a>
+                    <div id ="dpcont" class="dropdown-content">
+                      <a href="#">Narcotráfico</a>
+                      <a href="#">Seguridad urbana</a>
+                      <a href="#">Género</a>
+                      <a href="#">Violencia institucional</a>
+                      <a href="#">Jóvenes y violencia</a>
+                      <a href="#">Politicas de drogas</a>
+                      <a href="#">Medio ambiente</a>
+                      <a href="#">Lesa humanidad</a>
+                      <a href="#">Periodismo Rojo</a>
+                    </div>
+                  </div>
+            </li>
+            <li><a href="index.html">PERIODISTAS</a></li>
+               </ul>
+
+               <!--logo-->
+               <div class="logo">
+                <img src="images/logonav1.PNG" alt="">
+               </div>
+
+               <!--bloque 2-->
+               <ul id="busqueda">
+                <li><a href="#">SOBRE LA RED</a></li>
+                <li id="buscar"><img width="60%" src="images/lupa.png" alt=""></li>
+               </ul>
+    </nav>
+
+   <!--contenedor principal-->
+    <div class="contenedor">
+
+         <!--bio periodista-->
+<div class="bioperio">
+
+        <!--foto y twitter-->
+        <div class="fyt">
+         <img src="images/natyarenas.PNG" alt="">
+         <div class="tw">
+            <img src="images/logotwitter.PNG"  alt="">
+            <h3>@Natyarenas</h3>
+         </div>
+        </div>
+
+        <!--texto bio-->
+        <div class="tbio">
+         <h1>Natalia Arenas</h1>
+
+         <!--escribe desde y  cantidad palabras-->
+         <div class="escdesde">
+             <h5><i>Escribe desde</i><span style="color:white;"><i> 5 mar, 2015</i></span></h5>
+             <div class="tagsescd">
+                <span>Géneros</span>
+                <span>Violencia institucional</span>
+                <span style="margin-right:-5px;">Lesa humanidad</span>
+             </div>
+         </div>
+         <p>
+            Licenciada en Periodismo de la Universidad Nacional de Lomas de Zamora. Diplomada de la Universidad de Buenos Aires en Géneros y Movimientos Feministas. Redactora en Cosecha Roja. Colaboradora en distintos medios. En 2018 ganó el Premio Lola Mora en la categoría prensa digital por su trabajo en Cosecha Roja.
+         </p>
+        </div>
+    </div>
+    </div>
+
+    <!--sus notas-->
+    <div class="susnotas">
+        <h1>Sus notas</h1>
+    </div>
+
+    <!--botones filtro-->
+    <div class="botonesfiltro">
+        <div class="tab">
+  <div class="grupo1">
+            <button class="tablinks"  onclick="CambiarCategoria(event, 'Todas')" id="defaultOpen">Todas</button>
+            <button >Narcotrafico</button>
+            <button>Seguridad urbana</button>
+            <button class="tablinks" onclick="CambiarCategoria(event, 'Genero')">Género</button>
+            <button class="tablinks" onclick="CambiarCategoria(event, 'ViolenciaInstitucional')">Violencia institucional</button>
+            <button>Medio ambiente</button>
+            <button>LesaHumanidad</button>
+        </div>
+        </div>
+
+       <div class="grupo2">
+            <button>Jovenes y violencia</button>
+            <button>Politicas de  drogas</button>
+       </div>
+    </div>
+
+
+ <!--contendio tab todas-->
+<div id="Todas" class="tabcontent" style="display: block;">
+
+  <!--pagina 1-->
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+
+    <!--modulo nota 1-->
+    <a href="articulo.html">
+        <div id="parent" class="nota">
+            <div  class="imagennota">
+                
+                    <img class="imgh"  src="images/fotonota1.PNG"  alt="">
+                              
+            </div>
+        <div class="textonota">
+    
+                <h4> <span style="background-color: #BF2230; padding: 5px 10px 5px 10px;">Géneros</span></h4>
+    
+            <h1>Una ley para llenar el Estado de travestis y trans: media sanción en Diputados</h1>
+            <p>El proyecto de cupo laboral se aprobó este viernes a la madrugada y se giró al Senado. Una lucha que la militancia y activismo LGBT+ vienen dando hace...</p>
+            <h5>09 de Junio 2021 </h5>
+        </div> 
+        </div>
+    </a> 
+ 
+
+    <!--modulo nota 2-->
+    <div id="parent" class="nota">
+        <div class="imagennota">
+            <img class="imgh"  src="images/fotonota2.PNG" alt="">
+        </div>
+    <div class="textonota">
+        <h4> <span style="background-color: #BF2230; padding: 5px 10px 5px 10px;">Géneros</span></h4>
+        <h1>Vive en la calle y tiene 7 hijos: pasará 3 años y medio presa por intentar robar una bici</h1>
+        <p>En un juicio que duró dos días, Natalí fue condenada a 3 años y seis meses de cárcel por tentativa de robo. Ya hace un año que está en la Unidad Penal...</p>
+        <h5>04 de Junio 2021 </h5>
+    </div>
+    </div>
+
+    <!--modulo nota 3-->
+    <div id="parent" class="nota">
+        <div class="imagennota">
+            <img class="imgh" src="images/fotonota3.PNG" alt="">
+        </div>
+    <div class="textonota">
+        <h4> <span style="background-color: #BF2230; padding: 5px 10px 5px 10px;">Géneros</span></h4>
+        <h1>Susana Chávez, la poeta de Ciudad Juárez que gritó Ni Una Menos por primera vez</h1>
+        <p>Fue una de las pioneras en visibilizar las desapariciones y asesinatos sistemáticos de mujeres en la década del 90 en la ciudad más...</p>
+        <h5>02 de Junio 2021 </h5>
+    </div>
+    </div>
+
+    <!--modulo nota 4-->
+<div id="parent" class="nota">
+        <div class="imagennota" id="c" >
+            <img class="imgh" src="images/fotonota4.PNG" alt="" id="d">
+        </div>
+    <div class="textonota">
+        <h4> <span style="background-color: #BF2230; padding: 5px 10px 5px 10px;">Violencia-institucional</span></h4>
+        <h1>Volvió a su casa pero sigue preso sin pruebas por viajar en un auto robado</h1>
+        <p>Sebastián Ventorino tiene 19 años y en enero cayó detenido por el robo de un remis que pasó a 4 kilómetros de donde él estaba comiendo fideos...</p>
+        <h5>31 de Mayo 2021 </h5>
+    </div>
+    </div>
+    </div>
+</div>
+
+<!--pagina 2-->
+<div class="mySlides fade">
+  <!--modulo nota 1-->
+  <div id="parent" class="nota">
+    <div class="imagennota">
+        <img class="imgh" src="images/nota2violenciainstitucional.PNG" alt="">
+    </div>
+<div class="textonota">
+    <h4> <span style="background-color: #BF2230; padding: 5px 10px 5px 10px;">Violencia-institucional</span></h4>
+    <h1>Hot sale: Garbarino cerró 40 sucursales y suspendió a 1.300 trabajadores</h1>
+    <p>Empleadxs en todo el país denuncian vaciamiento, deudas salariales y previsionales e incumplimiento de protocolos covid. La compañía es una de las que más...</p>
+    <h5>13 de Mayo 2021 </h5>
+</div>
+</div>
+
+
+ <!--modulo nota 2-->
+ <div id="parent" class="nota">
+    <div class="imagennota">
+        <img class="imgh" src="images/nota3violenciainstitucional.PNG" alt="">
+    </div>
+<div class="textonota">
+    <h4> <span style="background-color: #BF2230; padding: 5px 10px 5px 10px;">Violencia-institucional</span></h4>
+    <h1>Trata en el campo: le pagaban 1.000 por semana y le descontaban el gas</h1>
+    <p>En un campo ganadero de la localidad de Las Bandurrias, en la provincia de Santa Fe, una familia vivía hace 7 años en condiciones de esclavitud. Sin francos...</p>
+    <h5>22 de Abril 2021  </h5>
+</div>
+</div>
+
+
+ <!--modulo nota 3-->
+ <div id="parent" class="nota">
+    <div class="imagennota">
+        <img class="imgh" src="images/nota4violenciainstitucional.PNG" alt="">
+    </div>
+<div class="textonota">
+    <h4> <span style="background-color: #BF2230; padding: 5px 10px 5px 10px;">Violencia-institucional</span></h4>
+    <h1>Hablemos del colapso de lxs trabajadorxs de la salud</h1>
+    <p>La saturación del sistema sanitario es un fantasma que trajo la pandemia y parece no querer irse. Su mayor argumento es la ocupación de camas. Pero ¿qué pasa...</p>
+    <h5>13 de Abril 2021 </h5>
+</div>
+</div>
+<!--modulo nota 4-->
+<div id="parent" class="nota">
+    <div class="imagennota">
+        <img class="imgh" src="images/generonota4.png" alt="">
+    </div>
+   <div class="textonota">
+    <h4> <span style="background-color: #BF2230; padding: 5px 10px 5px 10px;">Géneros</span></h4>
+    <h1>28M: ¿Cómo se está garantizando el aborto legal en Argentina?</h1>
+    <p>Por primera vez llegamos al Día de Acción por la Salud de las Mujeres con una ley que garantiza el derecho a decidir. Aún no hay cifras oficiales, pero sí un crecimie...</p>
+    <h5>25 de Mayo 2021 </h5>
+   </div>
+   </div>
+
+  </div>
+
+  <!--pagina 3-->
+<div class="mySlides fade">
+   <!--modulo nota 2-->
+   <div id="parent" class="nota">
+    <div class="imagennota">
+        <img class="imgh" src="images/nota2violenciainstitucional.PNG" alt="">
+    </div>
+<div class="textonota">
+    <h4> <span style="background-color: #BF2230; padding: 5px 10px 5px 10px;">Violencia-institucional</span></h4>
+    <h1>Hot sale: Garbarino cerró 40 sucursales y suspendió a 1.300 trabajadores</h1>
+    <p>Empleadxs en todo el país denuncian vaciamiento, deudas salariales y previsionales e incumplimiento de protocolos covid. La compañía es una de las que más...</p>
+    <h5>13 de Mayo 2021 </h5>
+</div>
+</div>
+
+
+ <!--modulo nota 3-->
+ <div id="parent" class="nota">
+    <div class="imagennota">
+        <img class="imgh" src="images/nota3violenciainstitucional.PNG" alt="">
+    </div>
+<div class="textonota">
+    <h4> <span style="background-color: #BF2230; padding: 5px 10px 5px 10px;">Violencia-institucional</span></h4>
+    <h1>Trata en el campo: le pagaban 1.000 por semana y le descontaban el gas</h1>
+    <p>En un campo ganadero de la localidad de Las Bandurrias, en la provincia de Santa Fe, una familia vivía hace 7 años en condiciones de esclavitud. Sin francos...</p>
+    <h5>22 de Abril 2021  </h5>
+</div>
+</div>
+
+
+ <!--modulo nota 4-->
+ <div id="parent" class="nota">
+    <div class="imagennota">
+        <img class="imgh" src="images/nota4violenciainstitucional.PNG" alt="">
+    </div>
+<div class="textonota">
+    <h4> <span style="background-color: #BF2230; padding: 5px 10px 5px 10px;">Violencia-institucional</span></h4>
+    <h1>Hablemos del colapso de lxs trabajadorxs de la salud</h1>
+    <p>La saturación del sistema sanitario es un fantasma que trajo la pandemia y parece no querer irse. Su mayor argumento es la ocupación de camas. Pero ¿qué pasa...</p>
+    <h5>13 de Abril 2021 </h5>
+</div>
+  </div>
+</div>
+</div>
+
+
+
+<!--contenido tabs genero-->
+
+<div id="Genero" class="tabcontent">
+
+
+    <!--modulo nota 1-->
+<div id="parent" class="nota">
+    <div class="imagennota">
+        <img class="imgh" src="images/fotonota3.PNG" alt="">
+    </div>
+   <div class="textonota">
+    <h4> <span style="background-color: #BF2230; padding: 5px 10px 5px 10px;">Géneros</span></h4>
+    <h1>Susana Chávez, la poeta de Ciudad Juárez que gritó Ni Una Menos por primera vez</h1>
+    <p>Fue una de las pioneras en visibilizar las desapariciones y asesinatos sistemáticos de mujeres en la década del 90 en la ciudad más...</p>
+    <h5>02 de Junio 2021 </h5>
+   </div>
+   </div>
+
+<!--modulo nota 2-->
+<div id="parent"class="nota">
+ <div class="imagennota">
+     <img  class="imgh" src="images/fotonota1.PNG" alt="">
+ </div>
+<div class="textonota">
+
+     <h4> <span style="background-color: #BF2230; padding: 5px 10px 5px 10px;">Géneros</span></h4>
+
+ <h1>Una ley para llenar el Estado de travestis y trans: media sanción en Diputados</h1>
+ <p>El proyecto de cupo laboral se aprobó este viernes a la madrugada y se giró al Senado. Una lucha que la militancia y activismo LGBT+ vienen dando hace...</p>
+ <h5>09 de Junio 2021 </h5>
+</div>
+</div>
+
+<!--modulo nota 3-->
+<div id="parent" class="nota">
+ <div class="imagennota">
+     <img class="imgh" src="images/fotonota2.PNG" alt="">
+ </div>
+<div class="textonota">
+ <h4> <span style="background-color: #BF2230; padding: 5px 10px 5px 10px;">Géneros</span></h4>
+ <h1>Vive en la calle y tiene 7 hijos: pasará 3 años y medio presa por intentar robar una bici</h1>
+ <p>En un juicio que duró dos días, Natalí fue condenada a 3 años y seis meses de cárcel por tentativa de robo. Ya hace un año que está en la Unidad Penal...</p>
+ <h5>04 de Junio 2021 </h5>
+</div>
+</div>
+
+
+<!--modulo nota 4-->
+<div id="parent" class="nota">
+    <div class="imagennota">
+        <img class="imgh" src="images/generonota4.png" alt="">
+    </div>
+   <div class="textonota">
+    <h4> <span style="background-color: #BF2230; padding: 5px 10px 5px 10px;">Géneros</span></h4>
+    <h1>28M: ¿Cómo se está garantizando el aborto legal en Argentina?</h1>
+    <p>Por primera vez llegamos al Día de Acción por la Salud de las Mujeres con una ley que garantiza el derecho a decidir. Aún no hay cifras oficiales, pero sí un crecimie...</p>
+    <h5>25 de Mayo 2021 </h5>
+   </div>
+   </div>
+
+</div>
+  </div>
+
+  <!--contendio tab Violencia institucional-->
+  <div id="ViolenciaInstitucional" class="tabcontent">
+  <!--modulo nota 1-->
+  <div id="parent" class="nota">
+     <div class="imagennota">
+         <img class="imgh" src="images/fotonota4.PNG" alt="">
+     </div>
+ <div class="textonota">
+     <h4> <span style="background-color: #BF2230; padding: 5px 10px 5px 10px;">Violencia-institucional</span></h4>
+     <h1>Volvió a su casa pero sigue preso sin pruebas por viajar en un auto robado</h1>
+     <p>Sebastián Ventorino tiene 19 años y en enero cayó detenido por el robo de un remis que pasó a 4 kilómetros de donde él estaba comiendo fideos...</p>
+     <h5>31 de Mayo 2021 </h5>
+ </div>
+ </div>
+
+  <!--modulo nota 2-->
+  <div id="parent" class="nota">
+    <div class="imagennota">
+        <img class="imgh" src="images/nota2violenciainstitucional.PNG" alt="">
+    </div>
+<div class="textonota">
+    <h4> <span style="background-color: #BF2230; padding: 5px 10px 5px 10px;">Violencia-institucional</span></h4>
+    <h1>Hot sale: Garbarino cerró 40 sucursales y suspendió a 1.300 trabajadores</h1>
+    <p>Empleadxs en todo el país denuncian vaciamiento, deudas salariales y previsionales e incumplimiento de protocolos covid. La compañía es una de las que más...</p>
+    <h5>13 de Mayo 2021 </h5>
+</div>
+</div>
+
+
+ <!--modulo nota 3-->
+ <div id="parent" class="nota">
+    <div class="imagennota">
+        <img class="imgh" src="images/nota3violenciainstitucional.PNG" alt="">
+    </div>
+<div class="textonota">
+    <h4> <span style="background-color: #BF2230; padding: 5px 10px 5px 10px;">Violencia-institucional</span></h4>
+    <h1>Trata en el campo: le pagaban 1.000 por semana y le descontaban el gas</h1>
+    <p>En un campo ganadero de la localidad de Las Bandurrias, en la provincia de Santa Fe, una familia vivía hace 7 años en condiciones de esclavitud. Sin francos...</p>
+    <h5>22 de Abril 2021  </h5>
+</div>
+</div>
+
+
+ <!--modulo nota 4-->
+ <div id="parent" class="nota">
+    <div class="imagennota">
+        <img class="imgh" src="images/nota4violenciainstitucional.PNG" alt="">
+    </div>
+<div class="textonota">
+    <h4> <span style="background-color: #BF2230; padding: 5px 10px 5px 10px;">Violencia-institucional</span></h4>
+    <h1>Hablemos del colapso de lxs trabajadorxs de la salud</h1>
+    <p>La saturación del sistema sanitario es un fantasma que trajo la pandemia y parece no querer irse. Su mayor argumento es la ocupación de camas. Pero ¿qué pasa...</p>
+    <h5>13 de Abril 2021 </h5>
+</div>
+</div>
+      </div>
+           </div>
+</div>
+
+<!--botones siguiente pagina-->
+<div class="botsig">
+    <button class="dot" onclick="currentSlide(1)">1</button>
+    <button  class="dot" onclick="currentSlide(2)">2</button>
+    <button class="dot" onclick="currentSlide(3)">3</button>
+<h3>...</h3>
+<h3>21</h3>
+<img class="flechasig" src="images/flechasig.PNG" alt="">
+</div>
+
+<!--footer-->
+<footer>
+
+    <div class="grupohor">
+
+    <!--logo, sobre la red etc-->
+    <div class="bloque1foot">
+        <img src="images/logofooter.PNG" alt="">
+        <div class="about">
+            <h3>Sobre la red</h3>
+            <h3>Becas</h3>
+            <h3>Asociate</h3>
+            <h3>Contacto</h3>
+        </div>
+    </div>
+
+    <!--nuestras redes sociales-->
+    <div class="redes">
+        <h2>Nuestras redes sociales</h2>
+        <div class="nredes">
+            <div class="twf"><img src="images/twitterfooter.PNG" alt=""></div>
+            <div class="ig"><img src="images/instagramfooter.PNG" alt=""></div>
+            <div class="fb"><img src="images/fbfooter1.PNG" alt=""></div>
+        </div>
+
+    </div>
+    <!--contenedor opensociety, cronos y donde está miguel...-->
+<div class="organizaciones">
+    <div class="opsoc"><img src="images/opensociety.PNG" alt=""></div>
+    <div class="cronos"><img src="images/Cronos.PNG" alt=""></div>
+    <div class="dem"><img src="images/dem.PNG" alt=""></div>
+</div>
+  </div>
+
+
+<!--copyright-->
+<div class="cr">
+    <h5>Républica Argentina, Todos los derechos reservados</h5>
+<div class="typ">
+    <h5><u>Politica de privacidad</u></h5>
+    <h5 id="raya">|</h5>
+    <h5><u>Términos y condiciones</u></h5>
+</div>
+</div>
+</footer>
+<script>
+             /*cambiar contenido tabs*/
+ function CambiarCategoria(evt,CambiarCategoria) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(CambiarCategoria).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+
+
+
+  /*canbiar pagina dots*/
+  var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+document.getElementById('defaultOpen').click();
+</script>
+</body>
+</html>
